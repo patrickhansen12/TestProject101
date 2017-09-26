@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDrivenDevelopment", "TestDrivenDevelopment\TestDrivenDevelopment.csproj", "{2EC95143-0702-473A-AE3B-7B730BA3D4EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BE", "BE\BE.csproj", "{D7536C67-854E-4384-B1DA-4387AE32233D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "BE\DAL.csproj", "{D7536C67-854E-4384-B1DA-4387AE32233D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
