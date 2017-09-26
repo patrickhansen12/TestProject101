@@ -4,7 +4,8 @@ using System.Text;
 
 namespace BE.Entity
 {
-    class Request
+    public class Request
     {
+        public int Priority { get; set; }
     }
 }
