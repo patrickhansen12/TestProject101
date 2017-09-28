@@ -6,5 +6,6 @@ namespace BLL.Services
 {
     class ProposalService
     {
+
     }
 }
