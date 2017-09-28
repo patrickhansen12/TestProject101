@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 
 namespace Test
 {
@@ -9,7 +10,12 @@ namespace Test
         [TestMethod]
         public void TestMethod1()
         {
-            Assert.AreEqual();
+            List<Proposal> proposalList = new List<Proposal>();
+            {
+                proposalList.Add(new Proposal());
+                proposalList.Add(new Proposal());
+            }
+            Assert.AreEqual(proposalList.Count, 2);
         }
     }
 }
