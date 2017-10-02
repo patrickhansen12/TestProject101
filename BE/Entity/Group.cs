@@ -6,6 +6,7 @@ namespace DAL.Entity
 {
     public class Group
     {
+        public int Id { get; set; }
         public String Name { get; set; }
 
         public List<Student> Students { get; set; }
