@@ -7,9 +7,13 @@ namespace BLL.Services
 {
     class ProposalService : IProposalService
     {
-        public ProposalBO Create(ProposalBO proposal)
+        RentalConverter conv = new RentalConverter();
+
+        private DALFacade _facade;
+
+        public RentalService(DALFacade facade)
         {
-            return proposal;
+            _facade = facade;
         }
     }
 }

@@ -6,6 +6,7 @@ namespace DAL.Entity
 {
     public class Proposal
     {
+        public int Id { get; set; }
         public String Title { get; set; }
         public String Objective { get; set; }
         public String Semester { get; set; }

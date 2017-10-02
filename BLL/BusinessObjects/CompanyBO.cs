@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DAL.Entity
+namespace BLL.BusinessObjects
 {
-    public class Company
+    public class CompanyBO
     {
         public int Id { get; set; }
         public String Name { get; set; }
@@ -12,6 +12,7 @@ namespace DAL.Entity
         public String Tlf { get; set; }
         public String Contact { get; set; }
 
-        public List<Proposal> Proposals { get; set; }
+        public List<int> PropsalIds { get; set; }
+        public List<ProposalBO> Proposals { get; set; }
     }
 }
