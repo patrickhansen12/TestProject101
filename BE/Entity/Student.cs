@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BE
+namespace DAL.Entity
 {
-    public class BEStudent
+    public class Student
     {
+        public int Id { get; set; }
         public String Name { get; set; }
         public String Email { get; set; }
         public String Tlf { get; set; }
-        public BEGroup Group { get; set; }
+
+        public Group Group { get; set; }
     }
 }

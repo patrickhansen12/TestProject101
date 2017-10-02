@@ -51,17 +51,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contollers\CompaniesController.cs" />
+    <Compile Include="Contollers\ProposalsController.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlDatabaseSetup.cs" />
-    <Compile Include="SqlServerUnitTest1.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="SqlServerUnitTest1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BE\DAL.csproj">
+      <Project>{d7536c67-854e-4384-b1da-4387ae32233d}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup Condition="$(VisualStudioVersion) == '15.0'">
     <Reference Include="Microsoft.Data.Tools.Schema.Sql, Version=13.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>$(SSDTPath)\Microsoft.Data.Tools.Schema.Sql.dll</HintPath>
