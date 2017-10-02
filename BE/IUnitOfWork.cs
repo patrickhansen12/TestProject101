@@ -8,6 +8,7 @@ namespace DAL
     {
         ICompanyRepository CompanyRepository { get; }
         IProposalRepository ProposalRepository { get; }
+        IAssignmentRepository AssignmentRepository { get; }
         int Complete();
     }
 }

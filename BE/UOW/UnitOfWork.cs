@@ -10,6 +10,7 @@ namespace DAL.UOW
     {
         public ICompanyRepository CompanyRepository { get; internal set; }
         public IProposalRepository ProposalRepository { get; internal set; }
+        public IAssignmentRepository AssignmentRepository { get; internal set; }
         private TDDContext context;
 
         public UnitOfWork()
@@ -17,6 +18,7 @@ namespace DAL.UOW
             context = new TDDContext();
             CompanyRepository = new CompanyRepository(context);
             ProposalRepository = new PropsalRepository(context);
+            AssignmentRepository = new AssignmentRepository(context);
         }
 
         public int Complete()
